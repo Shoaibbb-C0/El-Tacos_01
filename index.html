@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EL TACOS – Mexican Street Kitchen, Kharghar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🌮</span>
+        <div class="logo-text">
+          <span class="logo-main">EL TACOS</span>
+          <span class="logo-sub">Mexican Street Kitchen</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/919999999999" class="nav-cta" target="_blank">Order Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#menu" onclick="closeMobileMenu()">Menu</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#reviews" onclick="closeMobileMenu()">Reviews</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="https://wa.me/919999999999" class="mobile-cta">Order on WhatsApp</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="floating-deco deco-chilli-1">🌶️</div>
+    <div class="floating-deco deco-cactus-1">🌵</div>
+    <div class="floating-deco deco-chilli-2">🌶️</div>
+    <div class="floating-deco deco-lime">🍋</div>
+    <div class="floating-deco deco-star">⭐</div>
+
+    <div class="papel-picado-strip">
+      <div class="papel-flag" style="--c:#E85D04"></div>
+      <div class="papel-flag" style="--c:#2D6A4F"></div>
+      <div class="papel-flag" style="--c:#E63946"></div>
+      <div class="papel-flag" style="--c:#E85D04"></div>
+      <div class="papel-flag" style="--c:#2D6A4F"></div>
+      <div class="papel-flag" style="--c:#E63946"></div>
+      <div class="papel-flag" style="--c:#E85D04"></div>
+      <div class="papel-flag" style="--c:#2D6A4F"></div>
+      <div class="papel-flag" style="--c:#E63946"></div>
+      <div class="papel-flag" style="--c:#E85D04"></div>
+      <div class="papel-flag" style="--c:#2D6A4F"></div>
+      <div class="papel-flag" style="--c:#E63946"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Left Content -->
+      <div class="hero-content" data-animate="fade-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Now Open in Kharghar, Navi Mumbai
+        </div>
+        <h1 class="hero-title">
+          Authentic<br />
+          <span class="title-accent">Mexican</span><br />
+          Flavours
+          <span class="title-location">in Kharghar</span>
+        </h1>
+        <p class="hero-subtitle">
+          Real street recipes. Bold spices. Crafted with love —<br />
+          bringing Mexico's soul to Navi Mumbai.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">
+            <span>Explore Menu</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/919999999999" class="btn btn-whatsapp" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">4.7★</span>
+            <span class="stat-label">Google Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Menu Items</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Hero Image -->
+      <div class="hero-image-wrapper" data-animate="fade-right">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-container">
+          <!-- 
+            HERO IMAGE: Mexican tacos / food
+            Using foodish API - always returns food images
+          -->
+          <img
+            src="https://foodish-api.com/images/tacos/tacos1.jpg"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop&crop=center&auto=format';"
+            alt="Delicious Mexican Tacos"
+            class="hero-main-image floating-food"
+          />
+        </div>
+        <div class="floating-badge badge-top">
+          <span>🔥</span> Street Style
+        </div>
+        <div class="floating-badge badge-bottom">
+          <span>🌮</span> 100% Fresh
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== MENU HIGHLIGHTS ========== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Our Specialties</span>
+        <h2 class="section-title">Menu <span class="accent">Highlights</span></h2>
+        <p class="section-desc">Hand-crafted with authentic recipes, fresh ingredients, and the spirit of Mexican street food culture.</p>
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- Card 1: Tacos -->
+        <div class="menu-card" data-animate="fade-up" data-delay="0">
+          <div class="card-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&h=300&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/500x300/E85D04/FFFFFF?text=🌮+Street+Tacos';"
+              alt="Street Tacos"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="card-tag">Bestseller 🔥</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3 class="card-title">Street Tacos</h3>
+              <span class="card-price">₹149</span>
+            </div>
+            <p class="card-desc">Classic corn tortillas loaded with spiced meat, pico de gallo, and fresh cilantro.</p>
+            <div class="card-footer">
+              <div class="card-rating">⭐ 4.9</div>
+              <a href="https://wa.me/919999999999" class="card-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Nachos -->
+        <div class="menu-card" data-animate="fade-up" data-delay="100">
+          <div class="card-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=500&h=300&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/500x300/2D6A4F/FFFFFF?text=🧀+Loaded+Nachos';"
+              alt="Loaded Nachos"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="card-tag">Fan Favorite</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3 class="card-title">Loaded Nachos</h3>
+              <span class="card-price">₹199</span>
+            </div>
+            <p class="card-desc">Crispy tortilla chips smothered in melted cheese, jalapeños, salsa & sour cream.</p>
+            <div class="card-footer">
+              <div class="card-rating">⭐ 4.8</div>
+              <a href="https://wa.me/919999999999" class="card-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Burritos -->
+        <div class="menu-card" data-animate="fade-up" data-delay="200">
+          <div class="card-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5?w=500&h=300&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/500x300/E63946/FFFFFF?text=🌯+Mega+Burrito';"
+              alt="Mega Burrito"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="card-tag">Chef's Pick</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3 class="card-title">Mega Burrito</h3>
+              <span class="card-price">₹249</span>
+            </div>
+            <p class="card-desc">Giant flour tortilla packed with rice, beans, grilled meat, and chipotle sauce.</p>
+            <div class="card-footer">
+              <div class="card-rating">⭐ 4.9</div>
+              <a href="https://wa.me/919999999999" class="card-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Mocktails -->
+        <div class="menu-card" data-animate="fade-up" data-delay="300">
+          <div class="card-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&h=300&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/500x300/FB8500/FFFFFF?text=🍹+Mocktails';"
+              alt="Fiesta Mocktail"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="card-tag">Refreshing</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3 class="card-title">Fiesta Mocktail</h3>
+              <span class="card-price">₹129</span>
+            </div>
+            <p class="card-desc">Zesty citrus blend with chilli rim, mint and the taste of a Mexican summer evening.</p>
+            <div class="card-footer">
+              <div class="card-rating">⭐ 4.7</div>
+              <a href="https://wa.me/919999999999" class="card-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Enchiladas – Wide Card -->
+        <div class="menu-card menu-card--wide" data-animate="fade-up" data-delay="400">
+          <div class="card-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=800&h=400&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/800x400/7B4F2E/FFFFFF?text=🧆+Classic+Enchiladas';"
+              alt="Classic Enchiladas"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="card-tag">New & Special</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-top">
+              <h3 class="card-title">Classic Enchiladas</h3>
+              <span class="card-price">₹279</span>
+            </div>
+            <p class="card-desc">Corn tortillas rolled with seasoned filling, topped with smoky red enchilada sauce and melted cheese. A true Mexican comfort dish.</p>
+            <div class="card-footer">
+              <div class="card-rating">⭐ 4.8</div>
+              <a href="https://wa.me/919999999999" class="card-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-cta" data-animate="fade-up">
+        <a href="https://wa.me/919999999999" class="btn btn-outline" target="_blank">View Full Menu on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image Side -->
+        <div class="about-image-side" data-animate="fade-right">
+          <div class="about-image-main-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600&h=500&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x500/E85D04/FFFFFF?text=EL+TACOS+Kitchen';"
+              alt="EL TACOS Kitchen"
+              class="about-main-img"
+            />
+          </div>
+          <div class="about-image-secondary-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=300&h=300&fit=crop&crop=center&auto=format&q=80"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x300/2D6A4F/FFFFFF?text=Fresh';"
+              alt="Fresh Ingredients"
+              class="about-secondary-img floating-food"
+            />
+          </div>
+          <div class="about-badge">
+            <span class="about-badge-icon">🌮</span>
+            <div>
+              <strong>Authentic</strong>
+              <small>Mexican Recipes</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="about-text-side" data-animate="fade-left">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">A Taste of Mexico<br /><span class="accent">in Kharghar</span></h2>
+          <p class="about-para">
+            EL TACOS was born from a deep love of Mexican street food culture — the sizzling trompos, hand-pressed tortillas, and bold sauces that define the streets of Mexico City.
+          </p>
+          <p class="about-para">
+            We brought that spirit to Kharghar, Navi Mumbai — a cozy kitchen where every taco is crafted fresh, every bite tells a story, and every visit feels like a mini fiesta.
+          </p>
+          <div class="about-features">
+            <div class="feature-chip"><span>🌶️</span> Authentic Spices</div>
+            <div class="feature-chip"><span>🌿</span> Fresh Daily</div>
+            <div class="feature-chip"><span>🤌</span> Handcrafted</div>
+            <div class="feature-chip"><span>🏡</span> Local Love</div>
+          </div>
+          <a href="#menu" class="btn btn-primary" style="margin-top:2rem;display:inline-flex;">
+            <span>Explore Our Menu</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="experience-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">The EL TACOS <span class="accent">Experience</span></h2>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card" data-animate="fade-up" data-delay="0">
+          <div class="exp-icon-wrap"><span class="exp-icon">🌶️</span></div>
+          <h3>Authentic Flavors</h3>
+          <p>Recipes rooted in Mexican tradition, seasoned to perfection with imported spices and techniques.</p>
+        </div>
+        <div class="experience-card" data-animate="fade-up" data-delay="100">
+          <div class="exp-icon-wrap"><span class="exp-icon">🥬</span></div>
+          <h3>Fresh Ingredients</h3>
+          <p>Every ingredient is sourced fresh daily. No compromises, no shortcuts — just clean, honest food.</p>
+        </div>
+        <div class="experience-card" data-animate="fade-up" data-delay="200">
+          <div class="exp-icon-wrap"><span class="exp-icon">🎉</span></div>
+          <h3>Vibrant Ambience</h3>
+          <p>Walk into a space that radiates warmth, colour and the festive energy of a Mexican mercado.</p>
+        </div>
+        <div class="experience-card" data-animate="fade-up" data-delay="300">
+          <div class="exp-icon-wrap"><span class="exp-icon">💛</span></div>
+          <h3>Great Vibes</h3>
+          <p>A place where every meal becomes a memory. Perfect for dates, hangouts, and family time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS SECTION ========== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Customer Love</span>
+        <h2 class="section-title">What People <span class="accent">Say</span></h2>
+      </div>
+
+      <div class="rating-highlight" data-animate="fade-up">
+        <div class="rating-big">4.7</div>
+        <div class="rating-stars">★★★★★</div>
+        <div class="rating-label">Google Rating</div>
+        <div class="rating-count">Based on 200+ reviews</div>
+      </div>
+
+      <div class="reviews-carousel-wrapper" data-animate="fade-up">
+        <div class="reviews-track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">R</div>
+              <div class="reviewer-info">
+                <strong>Ravi Mehta</strong>
+                <span>Kharghar Resident</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">"Absolutely blown away by the tacos! The flavours are so authentic, I felt like I was eating street food in Mexico City. The ambience is warm and the staff is super friendly. 10/10 will return!"</p>
+            <span class="review-date">2 weeks ago · Google</span>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background:#2D6A4F;">P</div>
+              <div class="reviewer-info">
+                <strong>Priya Sharma</strong>
+                <span>Food Blogger</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">"Kharghar finally has a gem! The nachos are incredible and the mocktails are refreshing. Love how they maintain authentic taste without being too spicy for Indian palate. Must visit!"</p>
+            <span class="review-date">1 month ago · Google</span>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background:#E63946;">A</div>
+              <div class="reviewer-info">
+                <strong>Amit Desai</strong>
+                <span>Regular Customer</span>
+              </div>
+              <div class="review-stars">★★★★☆</div>
+            </div>
+            <p class="review-text">"The burritos are massive and absolutely filling! Great value for money. The space is cozy and the vibe is exactly what you want when you're looking for something different. Highly recommend!"</p>
+            <span class="review-date">3 weeks ago · Google</span>
+          </div>
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background:#E85D04;">S</div>
+              <div class="reviewer-info">
+                <strong>Sneha Kulkarni</strong>
+                <span>Navi Mumbai Foodie</span>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">"Came here for a birthday dinner and it was perfect! The enchiladas are a must-try. Everything felt premium yet affordable. EL TACOS is my new favourite spot in Kharghar."</p>
+            <span class="review-date">1 week ago · Google</span>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="carousel-btn" id="nextBtn" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY SECTION ========== -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">@eltacos.kharghar</span>
+        <h2 class="section-title">Food <span class="accent">Gallery</span></h2>
+        <p class="section-desc">Follow our culinary journey on Instagram</p>
+      </div>
+    </div>
+
+    <div class="gallery-strip-wrapper" data-animate="fade-up">
+      <div class="gallery-strip" id="galleryStrip">
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/E85D04/FFFFFF?text=🌮';"
+            alt="Tacos"
+          />
+          <div class="gallery-overlay"><span>🌮</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/2D6A4F/FFFFFF?text=🧀';"
+            alt="Nachos"
+          />
+          <div class="gallery-overlay"><span>🧀</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/E63946/FFFFFF?text=🌶️';"
+            alt="Mexican Food"
+          />
+          <div class="gallery-overlay"><span>🌶️</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/7B4F2E/FFFFFF?text=🌯';"
+            alt="Burrito"
+          />
+          <div class="gallery-overlay"><span>🌯</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/FB8500/FFFFFF?text=🍹';"
+            alt="Mocktail"
+          />
+          <div class="gallery-overlay"><span>🍹</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/E85D04/FFFFFF?text=🍽️';"
+            alt="Enchiladas"
+          />
+          <div class="gallery-overlay"><span>🍽️</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/2D6A4F/FFFFFF?text=🌮';"
+            alt="Mexican Street Food"
+          />
+          <div class="gallery-overlay"><span>🌮</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=400&h=400&fit=crop&crop=center&auto=format&q=75"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/E63946/FFFFFF?text=🥑';"
+            alt="Fresh Ingredients"
+          />
+          <div class="gallery-overlay"><span>🥑</span></div>
+        </div>
+
+      </div>
+      <div class="gallery-gradient-left"></div>
+      <div class="gallery-gradient-right"></div>
+    </div>
+
+    <div class="container">
+      <div class="gallery-cta" data-animate="fade-up">
+        <a href="https://instagram.com" class="btn btn-outline" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOCATION + CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">Location & <span class="accent">Contact</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Our Address</h4>
+              <p>EL TACOS – Mexican Street Kitchen<br />Sector 35, Kharghar,<br />Navi Mumbai – 410210</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">⏰</div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon – Sun: 11:00 AM – 11:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h4>WhatsApp Orders</h4>
+              <p><a href="https://wa.me/919999999999" target="_blank">+91 99999 99999</a></p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/919999999999" class="social-btn whatsapp-social" aria-label="WhatsApp" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map" data-animate="fade-left">
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.338!2d73.0688!3d19.0421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b1935e6ae3%3A0xb2e2d9b57e6d62b9!2sKharghar%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="EL TACOS Location - Kharghar"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="final-cta-section">
+    <div class="cta-deco deco-1">🌮</div>
+    <div class="cta-deco deco-2">🌶️</div>
+    <div class="cta-deco deco-3">🌵</div>
+    <div class="container">
+      <div class="final-cta-content" data-animate="fade-up">
+        <div class="cta-emoji-row">🌮 🌶️ 🌯</div>
+        <h2 class="cta-title">Let's Taco<br /><span class="accent">'Bout It!</span></h2>
+        <p class="cta-subtitle">Ready for the most authentic Mexican experience in Navi Mumbai? We're just one message away!</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/919999999999" class="btn btn-whatsapp btn-large" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Order on WhatsApp
+          </a>
+          <a href="tel:+919999999999" class="btn btn-outline btn-large">📞 Call to Reserve</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:1rem;">
+            <span class="logo-icon">🌮</span>
+            <div class="logo-text">
+              <span class="logo-main" style="color:var(--cream);">EL TACOS</span>
+              <span class="logo-sub" style="color:rgba(250,246,239,0.5);">Mexican Street Kitchen</span>
+            </div>
+          </div>
+          <p>Bringing the bold, authentic flavours of Mexican street food to Kharghar, Navi Mumbai.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <p>📍 Sector 35, Kharghar, Navi Mumbai</p>
+          <p>📞 <a href="tel:+919999999999">+91 99999 99999</a></p>
+          <p>⏰ 11 AM – 11 PM Daily</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 EL TACOS – Mexican Street Kitchen. All rights reserved.</p>
+        <p>Crafted with 🌮 & ❤️ in Kharghar</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" aria-label="Order on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">Order Now!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
